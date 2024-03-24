@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Carbon Emissions Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kenya Carbon Emissions Monitor</h1>
+        <div>
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity">
+        </div>
+        <div>
+            <label for="emissions">Emissions (kg CO2):</label>
+            <input type="number" id="emissions">
+        </div>
+        <button onclick="addEmissions()">Add Emissions</button>
+        <div id="emissionsList">
+            <!-- Emissions list will be displayed here -->
+        </div>
+        <div id="totalEmissions">
+            Total Emissions: <span id="total">0</span> kg CO2
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
